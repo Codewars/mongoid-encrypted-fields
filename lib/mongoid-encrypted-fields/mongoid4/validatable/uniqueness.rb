@@ -14,10 +14,6 @@ module Mongoid
       def initialize(options={})
         super
         @klass = options[:class]
-      end
-
-      def setup(klass)
-        @klass = klass
         check_validity!
       end
 
